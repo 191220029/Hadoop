@@ -21,7 +21,7 @@ public class InvertedIndexer {
         private IntWritable v = new IntWritable();
         @Override
         protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
-            HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+            HashMap<String, Integer> hashMap = new HashMap<>();
             FileSplit fileSplit = (FileSplit)context.getInputSplit();
             String fileName = fileSplit.getPath().getName();
             StringTokenizer itr = new StringTokenizer(value.toString());
