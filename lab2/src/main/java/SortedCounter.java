@@ -29,6 +29,7 @@ public class SortedCounter {
     private static class SortedCountMapper extends Mapper<Object, Text, Text, Text> {
         Text k = new Text();
         Text v = new Text();
+
         @Override
         protected void map(Object key, Text value, Context context) throws  java.io.IOException, java.lang.InterruptedException {
             StringTokenizer itr = new StringTokenizer(value.toString(), "\n");

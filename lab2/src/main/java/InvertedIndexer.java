@@ -51,7 +51,7 @@ public class InvertedIndexer {
         private int fileNumber = 0;
         private int sumFrequency = 0;
         private int frequency = 0;
-        final private DecimalFormat decimalFormat = new DecimalFormat(".000");
+        final private DecimalFormat decimalFormat = new DecimalFormat("0.000");
         private Text k = new Text();
         private Text v = new Text();
 
